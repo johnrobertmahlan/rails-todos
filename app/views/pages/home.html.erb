@@ -1,7 +1,14 @@
+<%= javascript_pack_tag 'buttons' %>
 <div class="row-fluid">
   <div class="span10 offset1">
     <div class="hero-unit">
-      <p>John's ToDo List</p>
+      <p id="pEl">John's ToDo List</p>
+
+      <div class="buttons">
+        <button id="newtask" type="submit" class="btn btn-primary">
+          Create New Task
+        </button>
+      </div>
       
       <% if @tasks.empty? %>
         <h1>There are no tasks yet!</h1>
