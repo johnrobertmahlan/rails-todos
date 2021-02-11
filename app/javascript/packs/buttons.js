@@ -13,7 +13,16 @@ function domReady(fn) {
   document.addEventListener('DOMContentLoaded', function() {
     console.log('I now have access to the DOM');
     const btnEl = document.getElementById('newtask');
-    btnEl.addEventListener('click', function() {
-        alert('CLICKED')
+    const modal = document.getElementById('newtask-mform');
+    const closeModals = document.getElementsByClassName('closemodal');
+    for (let i=0; i<closeModals.length; i++) {
+      closeModals[i].addEventListener('click', function(evt) {
+        console.log(evt);
+        evt.target.parentElement.style.display = "none";
+      }
+      )};
+    modal.style.display = "none";
+    btnEl.addEventListener('click', function(evt) {
+        evt.target.nextElementSibling.style.display = "block"
     })
 });

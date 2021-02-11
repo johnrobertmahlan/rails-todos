@@ -19,3 +19,19 @@ td {
 .buttons {
     margin-left: 450px;
 }
+
+#newtask-mform {
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    z-index: 9999;
+    display: none;
+    padding: 30px;
+    text-align: center;
+}
