@@ -9,7 +9,6 @@ class TasksController < ApplicationController
 
     def create
         @task = Task.create(task_params)
-        puts  "A new record has been created"
         @task.save
         redirect_to root_path
     end
