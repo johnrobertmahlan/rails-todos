@@ -8,7 +8,9 @@ import Rails from "@rails/ujs"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
-require ("custom/tasks")
+require ("custom/tasks");
+// require jquery;
+// require bootstrap-datepicker;
 
 Rails.start()
 // Turbolinks.start()

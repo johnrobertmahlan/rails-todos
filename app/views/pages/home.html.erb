@@ -22,6 +22,7 @@
                     <th>Note</th>
                     <th>Created At</th>
                     <th>Completed</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -31,6 +32,10 @@
                         <td><%= task.note %></td>
                         <td><%= task.created_at %></td>
                         <td><%= task.completed %></td>
+                        <td><form class="button_to" method="post" action="/tasks/<%= task.id %>">
+                        <input type="hidden" name="_method" value="delete">
+                        <input class="btn btn-primary" type="submit" value="Delete">
+                        </form></td>
                     </tr>
                 <% end %>
             <tbody>

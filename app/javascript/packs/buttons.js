@@ -11,7 +11,6 @@ function domReady(fn) {
 
   
   document.addEventListener('DOMContentLoaded', function() {
-    console.log('I now have access to the DOM');
     const btnEl = document.getElementById('newtask');
     const modal = document.getElementById('newtask-mform');
     const closeModals = document.getElementsByClassName('closemodal');
@@ -25,4 +24,6 @@ function domReady(fn) {
     btnEl.addEventListener('click', function(evt) {
         evt.target.nextElementSibling.style.display = "block"
     })
+    const delEl = document.getElementById('deletetask');
+    
 });
