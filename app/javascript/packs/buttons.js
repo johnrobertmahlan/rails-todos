@@ -13,6 +13,7 @@ function domReady(fn) {
   document.addEventListener('DOMContentLoaded', function() {
     const btnEl = document.getElementById('newtask');
     const modal = document.getElementById('newtask-mform');
+    const delEl = document.getElementById('deletetask');
     const closeModals = document.getElementsByClassName('closemodal');
     for (let i=0; i<closeModals.length; i++) {
       closeModals[i].addEventListener('click', function(evt) {
@@ -24,6 +25,7 @@ function domReady(fn) {
     btnEl.addEventListener('click', function(evt) {
         evt.target.nextElementSibling.style.display = "block"
     })
-    const delEl = document.getElementById('deletetask');
-    
+    delEl.addEventListener('click', function(evt) {
+      evt.target.nextElementSibling.style.display = "block"
+    });
 });
