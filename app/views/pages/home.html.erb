@@ -23,6 +23,7 @@
                     <th>Created At</th>
                     <th>Completed</th>
                     <th></th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -32,6 +33,11 @@
                         <td><%= task.note %></td>
                         <td><%= task.created_at %></td>
                         <td><%= task.completed %></td>
+                        <td>
+                        <form method="GET" action="tasks/<%= task.id %>">
+                        <button class="showtask btn btn-primary" type="submit">See More</button>
+                        </form>
+                        </td>
                         <td>
                         <button class="deletetask btn btn-primary" type="submit">Delete</button>
                         <%= render :partial => 'delete_form', locals: {task: task} %>
