@@ -14,8 +14,7 @@ function domReady(fn) {
     const btnEl = document.getElementById('newtask');
     const modal = document.getElementById('newtask-mform');
     const delEl = document.getElementsByClassName('deletetask');
-    // const delForm = document.getElementById('deletetask-mform');
-    // delForm.style.display = "none"
+    const showEl = document.getElementsByClassName('showtask');
     const closeModals = document.getElementsByClassName('closemodal');
     for (let i=0; i<closeModals.length; i++) {
       closeModals[i].addEventListener('click', function(evt) {
@@ -33,4 +32,10 @@ function domReady(fn) {
         evt.target.nextElementSibling.style.display = "block"
       });
     }
+    for (let i=0; i<showEl.length; i++) {
+      showEl[i].addEventListener('click', function(evt) {
+        console.log(evt);
+        evt.target.nextElementSibling.style.display = "block"
+      });
+    };
 });
