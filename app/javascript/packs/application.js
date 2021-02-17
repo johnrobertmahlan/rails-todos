@@ -9,6 +9,9 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
 require ("custom/tasks");
+import "./stylesheets/application.css.scss"
+import "./stylesheets/pages.scss"
+import "./stylesheets/tasks.scss"
 // require jquery;
 // require bootstrap-datepicker;
 

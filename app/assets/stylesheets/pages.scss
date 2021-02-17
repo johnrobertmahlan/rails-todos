@@ -20,7 +20,7 @@ td {
     margin-left: 450px;
 }
 
-#newtask-mform, #deletetask-mform {
+#newtask-mform, .deletetask-mform {
     width: 450px;
     height: 450px;
     background-color: white;
@@ -34,4 +34,8 @@ td {
     display: none;
     padding: 30px;
     text-align: center;
+}
+
+#styletest {
+    font-size: 500px;
 }

@@ -1,3 +1,27 @@
 // Place all the styles related to the tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.deletetask-mform {
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    z-index: 9999;
+    display: none;
+    padding: 30px;
+    text-align: center;
+}
+
+#styletest {
+    font-size: 700px;
+}
+
+h3 {
+    font-size: 25px;
+}

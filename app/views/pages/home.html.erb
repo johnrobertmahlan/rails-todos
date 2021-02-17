@@ -32,7 +32,10 @@
                         <td><%= task.note %></td>
                         <td><%= task.created_at %></td>
                         <td><%= task.completed %></td>
-                        <td><button id="deletetask" class="btn btn-primary">Delete</button><%= render :partial => 'delete_form' %></td>
+                        <td>
+                        <button class="deletetask btn btn-primary" type="submit">Delete</button>
+                        <%= render :partial => 'delete_form', locals: {task: task} %>
+                        </td>
                     </tr>
                 <% end %>
             <tbody>
