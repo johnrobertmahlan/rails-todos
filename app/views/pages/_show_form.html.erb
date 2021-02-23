@@ -1,4 +1,17 @@
 <div class="showtask-mform">
 <h1><%= task.title %></h1>
+<h3><%= task.note %></h3>
+<form class="button_to" action="/tasks/<%= task.id %>" method="post">
+<input type="hidden" name="_method" value="put">
+    <label>Title:</label>
+    <input name="title" type="text"></input>
+    <label>Note:</label>
+    <textarea name="note"></textarea>
+    <label>Completed:</label>
+    <input type="text" class="datepicker" name="completed" data-provide="datepicker"></input>
+    <br><br>
+    <input class="btn btn-danger" type="submit" value="Update">
+    </form>
+</form>
 <button class="closemodal btn btn-primary">Close</button>
 </div>
