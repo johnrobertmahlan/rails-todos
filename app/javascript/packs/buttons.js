@@ -12,16 +12,24 @@ function domReady(fn) {
   
   document.addEventListener('DOMContentLoaded', function() {
     const btnEl = document.getElementById('newtask');
+    const closeDeleteModals = document.getElementsByClassName('closedelete');
     const modal = document.getElementById('newtask-mform');
     const delEl = document.getElementsByClassName('deletetask');
     const showEl = document.getElementsByClassName('showtask');
     const closeModals = document.getElementsByClassName('closemodal');
+    for (let i=0; i<closeDeleteModals.length; i++) {
+      closeDeleteModals[i].addEventListener('click', function(evt) {
+        console.log(evt);
+        evt.target.offsetParent.style.display = "none";
+      })
+    }
     for (let i=0; i<closeModals.length; i++) {
       closeModals[i].addEventListener('click', function(evt) {
         console.log(evt);
         evt.target.parentElement.style.display = "none";
       }
       )};
+    
     modal.style.display = "none";
     btnEl.addEventListener('click', function(evt) {
         evt.target.nextElementSibling.style.display = "block"

@@ -46,7 +46,7 @@ td {
     font-size: 20px;
 }
 
-.deletetask-mform, .showtask-mform {
+.showtask-mform {
     width: 450px;
     height: 450px;
     background-color: white;
@@ -65,8 +65,23 @@ td {
 #newtask-mform {
     width: 450px;
     height: 400px;
-    padding: -10px;
     background-color: white;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    z-index: 9999;
+    display: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.deletetask-mform {
+    width: 450px;
+    height: 150px;
+    background-color: red;
     box-shadow: 0 0 10px black;
     border-radius: 10px;
     top: 50%;
@@ -77,4 +92,8 @@ td {
     display: none;
     padding: 30px;
     text-align: center;
+}
+
+#deletebuttons {
+    display: flex;
 }

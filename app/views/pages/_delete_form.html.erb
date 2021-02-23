@@ -1,8 +1,10 @@
 <div class="deletetask-mform">
 <p>Are you sure?<p>
+<div id="deletebuttons">
 <form class="button_to" method="post" action="/tasks/<%= task.id %>">
     <input type="hidden" name="_method" value="delete">
     <input class="btn btn-danger" type="submit" value="Delete">
 </form>
-<button class="closemodal btn btn-primary">Cancel</button>
+<button class="closedelete btn btn-primary">Cancel</button>
+</div>
 </div>
