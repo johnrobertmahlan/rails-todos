@@ -1,9 +1,10 @@
 <div id="newtask-mform">
+    <h3>What do you need to do?</h3>
     <form action="/tasks" method="POST">
-    <label>Title:</label>
-    <input name="title" type="text"></input>
-    <label>Note:</label>
-    <textarea name="note"></textarea>
+    <label>Task:</label>
+    <input name="title" type="text" placeholder="Like you're not busy enough already..."></input>
+    <label>Notes:</label>
+    <textarea name="note">Any special instructions?</textarea>
     <label>Completed:</label>
     <input type="text" class="datepicker" name="completed" data-provide="datepicker"></input>
     <br><br>
